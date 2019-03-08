@@ -24,7 +24,7 @@
       "image": "mrfredland/multi-nginx",
       "hostname": "nginx",
       "essential": true,
-      "portMappings": [
+      "portMapping": [
         {
           "hostPort": 80,
           "containerPort": 80
