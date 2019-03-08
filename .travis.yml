@@ -23,6 +23,7 @@ after_success:
   - docker push mrfredland/multi-nginx
   - docker push mrfredland/multi-server
   - docker push mrfredland/multi-worker
+  
 deploy:
   provider: eleasticbeanstalk
   region: eu-west-2
