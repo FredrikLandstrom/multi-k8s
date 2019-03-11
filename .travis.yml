@@ -13,7 +13,7 @@ before_install:
   - curl https://sdk.cloud.google.com | bash > /dev/null;
   # Sätt Environment
   - source $HOME/google-cloud-sdk/path.bash.inc
-  # Installera kubectl
+  # Installera kubectl i
   - gcloud components update kubectl
   # Aktivera service account
   - gcloud auth activate-service-account --key-file service-account.json
