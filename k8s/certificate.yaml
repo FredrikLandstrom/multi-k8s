@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-commonName: metriciolabs.com
-dnsNames:
-  - metriciolabs.com
-  - www.metriciolabs.com
-acme:
-  config:
-    - http01:
-        ingressClass: nginx
-      domains:
-        - metriciolabs.com
-        - www.metriciolabs.com
+  commonName: metriciolabs.com
+  dnsNames:
+    - metriciolabs.com
+    - www.metriciolabs.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - metriciolabs.com
+          - www.metriciolabs.com
