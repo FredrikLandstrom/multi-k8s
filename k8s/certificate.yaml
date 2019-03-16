@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: metriciolabs-com-tls
+spec:
+  secretName: metriciolabs-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+commonName: metriciolabs.com
+dnsNames:
+  - metriciolabs.com
+  - www.metriciolabs.com
+acme:
+  config:
+    - http01:
+        ingressClass: nginx
+      domains:
+        - metriciolabs.com
+        - www.metriciolabs.com
